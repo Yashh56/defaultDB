@@ -1,7 +1,0 @@
-# RelWave — auto-generated
-# Local config (connection credentials, environment overrides)
-relwave.local.json
-
-# OS / Editor
-.DS_Store
-Thumbs.db

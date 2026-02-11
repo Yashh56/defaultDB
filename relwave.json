@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "id": "fd6f94db-c282-4f3b-a417-6c134daa1bec",
+  "databaseId": "56d61879-09e2-46c3-9629-428c764ee730",
+  "name": "defaultDB",
+  "description": "defaultDB Testing Mode",
+  "engine": "mysql",
+  "createdAt": "2026-02-11T18:16:45.226Z",
+  "updatedAt": "2026-02-11T18:16:45.226Z"
+}

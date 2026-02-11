@@ -6,5 +6,19 @@
   "description": "defaultDB Testing Mode",
   "engine": "mysql",
   "createdAt": "2026-02-11T18:16:45.226Z",
-  "updatedAt": "2026-02-11T18:16:45.226Z"
+  "updatedAt": "2026-02-11T18:19:54.076Z",
+  "environments": {
+    "mappings": [
+      {
+        "branch": "main",
+        "environment": "production",
+        "isProduction": true
+      },
+      {
+        "branch": "develop",
+        "environment": "development",
+        "isProduction": false
+      }
+    ]
+  }
 }

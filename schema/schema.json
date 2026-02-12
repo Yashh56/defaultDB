@@ -1,0 +1,628 @@
+{
+  "version": 1,
+  "projectId": "fd6f94db-c282-4f3b-a417-6c134daa1bec",
+  "databaseId": "56d61879-09e2-46c3-9629-428c764ee730",
+  "schemas": [
+    {
+      "name": "defaultdb",
+      "tables": [
+        {
+          "name": "Attachment",
+          "type": "BASE TABLE",
+          "columns": [
+            {
+              "name": "id",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": true,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "url",
+              "type": "text",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "courseId",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "createdAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "CURRENT_TIMESTAMP(3)",
+              "isUnique": false
+            },
+            {
+              "name": "updatedAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            }
+          ]
+        },
+        {
+          "name": "Category",
+          "type": "BASE TABLE",
+          "columns": [
+            {
+              "name": "id",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": true,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            }
+          ]
+        },
+        {
+          "name": "Chapter",
+          "type": "BASE TABLE",
+          "columns": [
+            {
+              "name": "id",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": true,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "description",
+              "type": "text",
+              "nullable": true,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "videoUrl",
+              "type": "text",
+              "nullable": true,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "position",
+              "type": "int",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "isPublished",
+              "type": "tinyint",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "0",
+              "isUnique": false
+            },
+            {
+              "name": "isFree",
+              "type": "tinyint",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "0",
+              "isUnique": false
+            },
+            {
+              "name": "courseId",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "createdAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "CURRENT_TIMESTAMP(3)",
+              "isUnique": false
+            },
+            {
+              "name": "updatedAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            }
+          ]
+        },
+        {
+          "name": "Course",
+          "type": "BASE TABLE",
+          "columns": [
+            {
+              "name": "id",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": true,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "userId",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "title",
+              "type": "text",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "description",
+              "type": "text",
+              "nullable": true,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "imageUrl",
+              "type": "text",
+              "nullable": true,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "price",
+              "type": "double",
+              "nullable": true,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "isPublished",
+              "type": "tinyint",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "0",
+              "isUnique": false
+            },
+            {
+              "name": "categoryId",
+              "type": "varchar",
+              "nullable": true,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "createdAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "CURRENT_TIMESTAMP(3)",
+              "isUnique": false
+            },
+            {
+              "name": "updatedAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            }
+          ]
+        },
+        {
+          "name": "MuxData",
+          "type": "BASE TABLE",
+          "columns": [
+            {
+              "name": "id",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": true,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "assetId",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "playbackId",
+              "type": "varchar",
+              "nullable": true,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "chapterId",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            }
+          ]
+        },
+        {
+          "name": "Purchase",
+          "type": "BASE TABLE",
+          "columns": [
+            {
+              "name": "id",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": true,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "userId",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "courseId",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "createdAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "CURRENT_TIMESTAMP(3)",
+              "isUnique": false
+            },
+            {
+              "name": "updatedAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            }
+          ]
+        },
+        {
+          "name": "StripeCustomer",
+          "type": "BASE TABLE",
+          "columns": [
+            {
+              "name": "id",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": true,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "userId",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "stripeCustomerId",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "createdAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "CURRENT_TIMESTAMP(3)",
+              "isUnique": false
+            },
+            {
+              "name": "updatedAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            }
+          ]
+        },
+        {
+          "name": "UserProgress",
+          "type": "BASE TABLE",
+          "columns": [
+            {
+              "name": "id",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": true,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "userId",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "chapterId",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "isCompleted",
+              "type": "tinyint",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "0",
+              "isUnique": false
+            },
+            {
+              "name": "createdAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "CURRENT_TIMESTAMP(3)",
+              "isUnique": false
+            },
+            {
+              "name": "updatedAt",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            }
+          ]
+        },
+        {
+          "name": "_prisma_migrations",
+          "type": "BASE TABLE",
+          "columns": [
+            {
+              "name": "id",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": true,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "checksum",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "finished_at",
+              "type": "datetime",
+              "nullable": true,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "migration_name",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "logs",
+              "type": "text",
+              "nullable": true,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "rolled_back_at",
+              "type": "datetime",
+              "nullable": true,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "started_at",
+              "type": "datetime",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "CURRENT_TIMESTAMP(3)",
+              "isUnique": false
+            },
+            {
+              "name": "applied_steps_count",
+              "type": "int",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "0",
+              "isUnique": false
+            }
+          ]
+        },
+        {
+          "name": "schema_migrations",
+          "type": "BASE TABLE",
+          "columns": [
+            {
+              "name": "version",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": true,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            },
+            {
+              "name": "applied_at",
+              "type": "timestamp",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": "CURRENT_TIMESTAMP",
+              "isUnique": false
+            },
+            {
+              "name": "checksum",
+              "type": "varchar",
+              "nullable": false,
+              "isPrimaryKey": false,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            }
+          ]
+        },
+        {
+          "name": "users",
+          "type": "BASE TABLE",
+          "columns": [
+            {
+              "name": "id",
+              "type": "int",
+              "nullable": false,
+              "isPrimaryKey": true,
+              "isForeignKey": false,
+              "defaultValue": null,
+              "isUnique": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cachedAt": "2026-02-12T11:59:41.623Z"
+}

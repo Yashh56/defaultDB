@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "projectId": "fd6f94db-c282-4f3b-a417-6c134daa1bec",
+  "nodes": [
+    {
+      "tableId": "defaultdb.Attachment",
+      "x": 0,
+      "y": 0,
+      "width": 235,
+      "height": 238
+    },
+    {
+      "tableId": "defaultdb.Category",
+      "x": 350,
+      "y": 0,
+      "width": 220,
+      "height": 123
+    },
+    {
+      "tableId": "defaultdb.Chapter",
+      "x": 700,
+      "y": 0,
+      "width": 220,
+      "height": 353
+    },
+    {
+      "tableId": "defaultdb.Course",
+      "x": -389.5431111111111,
+      "y": 47.9946666666666,
+      "width": 220,
+      "height": 353
+    },
+    {
+      "tableId": "defaultdb.MuxData",
+      "x": 144.2862222222222,
+      "y": 463.7991111111112,
+      "width": 220,
+      "height": 181
+    },
+    {
+      "tableId": "defaultdb.Purchase",
+      "x": 700,
+      "y": 350,
+      "width": 220,
+      "height": 209
+    },
+    {
+      "tableId": "defaultdb.StripeCustomer",
+      "x": -505.5306666666667,
+      "y": 487.7208888888889,
+      "width": 268,
+      "height": 209
+    },
+    {
+      "tableId": "defaultdb.UserProgress",
+      "x": 350,
+      "y": 700,
+      "width": 252,
+      "height": 238
+    },
+    {
+      "tableId": "defaultdb._prisma_migrations",
+      "x": 700,
+      "y": 700,
+      "width": 302,
+      "height": 296
+    },
+    {
+      "tableId": "defaultdb.schema_migrations",
+      "x": 0,
+      "y": 1050,
+      "width": 294,
+      "height": 181
+    },
+    {
+      "tableId": "defaultdb.users",
+      "x": 350,
+      "y": 1050,
+      "width": 220,
+      "height": 94
+    }
+  ],
+  "zoom": 0.45694557270511776,
+  "panX": 509.07026807473596,
+  "panY": 56.25,
+  "updatedAt": "2026-02-12T12:00:02.085Z"
+}
